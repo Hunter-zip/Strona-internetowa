@@ -1,0 +1,354 @@
+@import url(zasoby/importme.css);
+
+/* ---------------------------------------------
+   Reset / Box sizing
+--------------------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------------------------------------------
+   BODY, TEKST i TŁO
+--------------------------------------------- */
+body {
+  background-image: url(Zasoby/tlo.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 87.5;
+  color: #333;
+}
+
+/* ---------------------------------------------
+   Nagłówki, paragrafy
+--------------------------------------------- */
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 2.2em;
+  margin-bottom: 0.3em;
+}
+
+h4 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+/* Klasa do czcionki Merienda (tytuł strony) */
+.merienda {
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ---------------------------------------------
+   KONTAINER STRONY
+--------------------------------------------- */
+.container {
+  width: 90%;
+  background-color: rgba(250, 250, 250, 1);
+  margin: 20px auto;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* ---------------------------------------------
+   HEADER
+--------------------------------------------- */
+header {
+  background-color: rgb(73, 73, 73);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ---------------------------------------------
+   NAV (lewy panel)
+--------------------------------------------- */
+nav {
+  float: left;
+  width: 300px;
+  min-height: 165vh;
+  padding: 20px 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* MENU rozwijane */
+.menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  margin-top: 10px;
+  background-color: rgba(0, 217, 255, 0.5);
+  border-radius: 4%;
+}
+
+.menu a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.1em;
+}
+
+.menu a:hover {
+  background-color: #eee;
+}
+
+.menu-button {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+#menu-toggle:checked + .menu {
+  max-height: 500px; /* wystarczająco duże, aby rozwinąć menu */
+}
+
+/* Radyjko */
+.radio-box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  text-align: center;
+}
+
+.radio-box h3 {
+  margin-bottom: 10px;
+}
+
+audio {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 280px;
+}
+
+/* ---------------------------------------------
+   SECTION (główna część prawego panelu)
+--------------------------------------------- */
+section {
+  float: left;
+  padding: 20px;
+  width: calc(100% - 300px);
+  min-height: 100vh;
+}
+
+/* ---------------------------------------------
+   Sekcja intro
+--------------------------------------------- */
+.intro {
+  margin-bottom: 30px;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.intro-list {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.intro-list li {
+  margin-bottom: 8px;
+}
+
+/* ---------------------------------------------
+   SEKCAJA „Co znajdziesz na stronie?”
+--------------------------------------------- */
+.features {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.features h2 {
+  text-align: center;
+  color: rgb(73, 73, 73);
+  margin-bottom: 20px;
+}
+
+/* Kontener kart */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Pojedyncza karta */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  flex: 1 1 220px;
+  max-width: 260px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card-icon {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: rgb(50, 50, 50);
+}
+
+.card p {
+  font-size: 1em;
+  margin-bottom: 15px;
+  color: rgb(80, 80, 80);
+}
+
+.card-link {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #3498db;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  font-size: 1em;
+}
+
+.card-link:hover {
+  background-color: #217dbb;
+}
+
+/* ---------------------------------------------
+   SEKCAJA „Polecane multimedia”
+--------------------------------------------- */
+.multimedia-section {
+  margin-bottom: 40px;
+}
+
+.multimedia-section h2 {
+  text-align: center;
+  color: rgb(73, 73, 73);
+  margin-bottom: 20px;
+}
+
+/* Siatka multimediów */
+.multimedia-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.multimedia-item {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.multimedia-item iframe,
+.multimedia-item video,
+.multimedia-item img,
+.multimedia-item audio {
+  width: 100%;
+  display: block;
+  border-radius: 8px 8px 0 0;
+}
+
+.multimedia-caption {
+  margin-top: 8px;
+  font-size: 0.95em;
+  color: rgb(50, 50, 50);
+}
+
+/* ---------------------------------------------
+   SEKCAJA „Ciekawostki”
+--------------------------------------------- */
+.fun-facts {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.fun-facts h2 {
+  text-align: center;
+  color: rgb(73, 73, 73);
+  margin-bottom: 15px;
+}
+
+.facts-list {
+  list-style: none;
+  column-count: 2;
+  column-gap: 30px;
+  padding-left: 0;
+}
+
+.facts-list li {
+  margin-bottom: 12px;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/* ---------------------------------------------
+   FOOTER
+--------------------------------------------- */
+footer {
+  clear: both;
+  background-color: rgb(73, 73, 73);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ---------------------------------------------
+   Media Queries – responsywność
+--------------------------------------------- */
+@media screen and (max-width: 1000px) {
+  nav {
+    width: 100%;
+    float: none;
+    min-height: auto;
+  }
+  section {
+    width: 100%;
+    float: none;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .facts-list {
+    column-count: 1;
+    padding-left: 20px;
+  }
+}
