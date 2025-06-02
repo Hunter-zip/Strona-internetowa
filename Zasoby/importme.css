@@ -1,0 +1,47 @@
+.menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-in-out;
+  margin-top: 10px;
+  background-color: rgba(0, 217, 255, 0.5);
+  border-radius: 4%;
+}
+
+.menu a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.menu a:hover {
+  background-color: #eee;
+}
+
+.menu-button {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#menu-toggle:checked + .menu {
+  max-height: 500px; /* większe niż potrzebne, ale potrzebne do animacji */
+}
+
+.radio-box {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: inline-block;
+  width: 99%;
+}
+
+audio {
+  margin-top: 15px;
+  width: 100%;
+  max-width: 300px;
+}

@@ -1,0 +1,99 @@
+@import url(../../Zasoby/importme.css);
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(Zasoby/gazeta.jpg);
+    background-size: cover; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 87.5;
+}
+
+h1{
+    font-size: 3em;
+}
+h2{
+    font-size: 2.8em;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35);
+}
+h3{
+    font-size: 2.4em;
+}
+h4{
+    font-size: 2em;
+}
+p, li{
+    font-size: 1.6em;
+}
+
+header{
+    background-color: rgb(0, 79, 110);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 1%;
+}
+
+nav{
+    float: left;
+    background-color: rgba(0, 0, 0, 0.2);
+    width:300px;
+    min-height: 3790px;
+    padding:10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0,0.5);
+}
+
+section{
+    float: left;
+    padding: 20px;
+    width: 81%;
+    min-height: 940px;
+}
+
+footer{
+    clear: both;
+    background-color: rgb(0, 79, 110);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 1%;
+}
+
+.kontener{
+    width:90%;
+    background-color: rgba(255,255,255,0.8);
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+}
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #2b2b2b23;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    flex-wrap: wrap;
+}
+.card-content {
+    flex: 1 1 60%;
+}
+.media {
+    flex: 1 1 39%;
+    display: flex;
+    justify-content: flex-end;
+}
+.media iframe, .media img, .media video {
+    max-width: 90%;
+    width: auto;
+    border-radius: 8px;
+}
