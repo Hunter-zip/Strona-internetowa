@@ -1,5 +1,9 @@
 @import url(../../Zasoby/importme.css);
 
+.menu a {
+    font-weight: bold;
+}
+
 *{
     box-sizing: border-box;
 }
