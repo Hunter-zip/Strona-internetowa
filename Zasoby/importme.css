@@ -30,18 +30,3 @@
 #menu-toggle:checked + .menu {
   max-height: 500px; /* większe niż potrzebne, ale potrzebne do animacji */
 }
-
-.radio-box {
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  display: inline-block;
-  width: 99%;
-}
-
-audio {
-  margin-top: 15px;
-  width: 100%;
-  max-width: 300px;
-}
