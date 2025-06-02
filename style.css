@@ -87,7 +87,7 @@ header {
 nav {
   float: left;
   width: 300px;
-  min-height: 165vh;
+  min-height: 170vh;
   padding: 20px 10px;
   background-color: rgba(255, 255, 255, 0.9);
 }
